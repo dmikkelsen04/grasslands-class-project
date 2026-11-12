@@ -1,0 +1,44 @@
+name: Project CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-format:
+    name: Build and format
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .tools/rojo .tools/stylua build
+          curl --fail --location --retry 3 https://github.com/rojo-rbx/rojo/releases/download/v7.7.1/rojo-7.7.1-linux-x86_64.zip -o .tools/rojo.zip
+          curl --fail --location --retry 3 https://github.com/JohnnyMorganz/StyLua/releases/download/v2.6.0/stylua-linux-x86_64.zip -o .tools/stylua.zip
+          unzip -q .tools/rojo.zip -d .tools/rojo
+          unzip -q .tools/stylua.zip -d .tools/stylua
+          chmod +x .tools/rojo/rojo .tools/stylua/stylua
+      - name: Check Luau formatting and syntax
+        run: .tools/stylua/stylua --check src
+      - name: Build Roblox place
+        run: .tools/rojo/rojo build default.project.json --output build/grasslands.rbxlx
+      - name: Upload review build
+        uses: actions/upload-artifact@v4
+        with:
+          name: grasslands-${{ github.sha }}
+          path: build/grasslands.rbxlx
+          if-no-files-found: error
+          retention-days: 14

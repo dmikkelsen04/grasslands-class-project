@@ -1,0 +1,22 @@
+name: Bug report
+description: Record a reproducible problem and expected behavior.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: Include build/commit, player count, and device or viewport.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and regression test
+      description: Add screenshots, relevant Output errors, and a way to verify the fix. Exclude secrets and player data.

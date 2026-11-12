@@ -1,0 +1,12 @@
+/build/
+/.tools/
+/.env
+/.env.*
+!.env.example
+*.rbxl.lock
+*.rbxlx.lock
+*.rbxm.lock
+*.rbxmx.lock
+*.autosave
+.DS_Store
+Thumbs.db

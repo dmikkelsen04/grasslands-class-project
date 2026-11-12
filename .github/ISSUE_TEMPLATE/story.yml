@@ -1,0 +1,36 @@
+name: User story
+description: Plan a small player or developer outcome with observable acceptance criteria.
+title: "[Story] "
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: User story
+      placeholder: As a player, I want to ..., so that ...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List observable outcomes and important edge cases.
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation plan
+      description: Describe automated tests and Studio playtests needed to prove completion.
+    validations:
+      required: true
+  - type: textarea
+    id: planning
+    attributes:
+      label: Planning
+      description: Owner, reviewer, estimate, dependencies, and sprint (after team planning).
+  - type: textarea
+    id: assets
+    attributes:
+      label: Reused assets
+      description: List prior-work assets and required provenance/permission checks, if any.

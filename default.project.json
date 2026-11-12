@@ -1,0 +1,45 @@
+{
+  "name": "GrasslandsClassProject",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Shared": { "$path": "src/shared" }
+    },
+    "ServerScriptService": {
+      "Server": { "$path": "src/server" }
+    },
+    "ServerStorage": {
+      "CreatureAssets": { "$path": "assets/creatures" }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": { "$path": "src/client" }
+      }
+    },
+    "StarterGui": {
+      "GameUI": { "$path": "src/ui" }
+    },
+    "Workspace": {
+      "$properties": { "FilteringEnabled": true },
+      "Grasslands": { "$path": "world/grasslands" },
+      "BootstrapFloor": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Size": [64, 1, 64],
+          "Position": [0, -0.5, 0],
+          "Color": [0.4, 0.4, 0.4]
+        }
+      },
+      "BootstrapSpawn": {
+        "$className": "SpawnLocation",
+        "$properties": {
+          "Anchored": true,
+          "Neutral": true,
+          "Size": [6, 1, 6],
+          "Position": [0, 0.5, 0]
+        }
+      }
+    }
+  }
+}
