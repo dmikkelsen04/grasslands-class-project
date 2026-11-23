@@ -4,9 +4,9 @@ A new Roblox software engineering class project: one small, playable grasslands 
 
 ## Current state
 
-Repository bootstrap only. The build contains a temporary gray floor, a spawn, and server/client startup messages. The grasslands map, creatures, catching, animations, collection index, and persistence are **not implemented**.
+Issue #2 map implementation: the build contains the existing spawn scenery and five static plot shells, a new 480 x 500 stud grasslands zone, paths, a farm corner, a shallow pond, grass patches, and closed cliff boundaries. Three named clearings reserve space for future creatures. Creatures, catching, animations, the collection index, and persistence are **not implemented**.
 
-Development starts with this repository. No previous game versions or gameplay scripts are imported. Selected art, creature models, and animation assets from the author's existing game may be reused later, with their origin recorded in [the asset register](docs/assets.md). Reusing an asset does not count as creating it during this project.
+Development starts with this repository. No previous gameplay scripts are imported. Spawn scenery, the barn, cornfield, oak tree, crates, and ground texture are reused from the owner's open Catch a Shiny place; their origin is recorded in [the asset register](docs/assets.md). The enlarged layout, paths, boundaries, pond, grass patches, and map validation were authored for this project. Reusing an asset does not count as creating it during this project.
 
 ## Scope
 
@@ -23,7 +23,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/check.ps1
 
 The setup script downloads pinned official releases of Rojo 7.7.1 and StyLua 2.6.0 into this repository's ignored `.tools` directory. The check script validates Luau formatting/syntax and builds `build/grasslands.rbxlx`.
 
-Open **that generated file** in Studio and press Play. Confirm both startup messages appear in Output. This is a scaffolding check, not a gameplay test. The original game is not needed to build this baseline.
+Open **that generated file** in Studio and press Play. Walk through the entrance to the meadow, visit the pond and barn along the paths, and test the cliff boundaries. Confirm both startup messages appear in Output. See [map validation and review](docs/map-review.md). The original game is not needed to build this version. The reused ground texture is a hosted Roblox asset and needs normal Roblox asset access.
 
 ## Development workflow
 
@@ -49,7 +49,7 @@ GitHub protection applies to GitHub, not Studio publishing. A merge does not aut
 
 ## Validation and limitations
 
-CI currently runs **Build and format** on pushes to `main` and on PRs. It checks formatting/Luau parsing with StyLua and builds the place with Rojo. It does not run Roblox gameplay, type checking, or unit/integration tests yet. Those tests are planned in the backlog; no test coverage is claimed for this bootstrap.
+CI runs **Build and format** on pushes to `main` and on PRs. It checks formatting/Luau parsing with StyLua, builds the place with Rojo, and runs Python map-structure assertions (anchoring, safe spawn, continuous ground, closed boundaries, and no embedded legacy gameplay). It does not run Roblox gameplay, type checking, or gameplay unit/integration tests yet. No gameplay coverage percentage is claimed.
 
 CI retains the built place as a review artifact. Reviewers must also check the PR's Studio test evidence, especially for visual and multiplayer changes. No Roblox credentials or deployment keys are required for this workflow.
 
