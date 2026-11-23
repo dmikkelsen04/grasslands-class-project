@@ -10,7 +10,7 @@ Development starts with this repository. The map geometry and layout are explici
 
 ## Scope
 
-The proposed MVP is one grasslands map, the eight existing grasslands creature species, basic creature movement/animations, one catching interaction, an index, and saved collection progress. Sprint planning is tracked in issue #1. Other zones, trading, monetization, elaborate economies, and stealing mechanics are outside the initial scope. See [scope and acceptance criteria](docs/scope.md).
+The proposed MVP is one grasslands map, the eight existing grasslands creature species, basic creature movement/animations, one catching interaction, an index, and saved collection progress. Sprint 1 runs November 23–29 and Sprint 2 runs November 30–December 6, with December 7–8 reserved for delivery preparation before the December 9, 2026 deadline. See the [sprint plan and responsibilities](docs/sprints/sprint-01.md). Other zones, trading, monetization, elaborate economies, and stealing mechanics are outside the initial scope. See [scope and acceptance criteria](docs/scope.md).
 
 ## Get started on Windows
 
