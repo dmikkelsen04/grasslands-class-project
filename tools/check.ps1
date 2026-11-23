@@ -9,7 +9,7 @@ if (!(Test-Path -LiteralPath $stylua) -or !(Test-Path -LiteralPath $rojo)) {
 
 Push-Location $projectRoot
 try {
-    & $stylua --check src
+    & $stylua --check src tools/generate-map.luau tools/import-original-map.luau
     if ($LASTEXITCODE -ne 0) { throw 'Luau format/syntax check failed.' }
     New-Item -ItemType Directory -Path 'build' -Force | Out-Null
     & $rojo build default.project.json --output build/grasslands.rbxlx

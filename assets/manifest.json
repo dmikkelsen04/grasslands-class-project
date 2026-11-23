@@ -1,4 +1,29 @@
 {
   "schemaVersion": 1,
-  "assets": []
+  "assets": [
+    {
+      "id": "OriginalSpawnAndGrasslands",
+      "name": "Original spawn and grasslands scenery",
+      "kind": "model",
+      "path": "assets/environment/OriginalSpawnAndGrasslands.rbxm",
+      "source": "Catch a Shiny, place 114451084618400, open Studio snapshot 2026-11-23",
+      "creator": "Existing user-provided game scenery; original per-asset authorship not independently verified",
+      "permission": "Reused from the user-provided game at the owner's request; existing asset permissions apply, no new license grant",
+      "priorWork": true,
+      "changesForClass": "Original scale and placement preserved; distant biome scenery, scripts, prompts, remotes, five SpeedBicycle models, and the Munch Ball display excluded. A matching end wall is added in the generated map.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/2"
+    },
+    {
+      "id": "ground-checker",
+      "name": "Existing ground checker texture",
+      "kind": "image",
+      "robloxAssetId": "4806196507",
+      "source": "Texture on Map.MapSpawn1 in the same open-place snapshot",
+      "creator": "Original asset creator not independently verified",
+      "permission": "Existing hosted Roblox asset reused as in the supplied place; no new license grant",
+      "priorWork": true,
+      "changesForClass": "Original textures retained on original floors at unchanged tiling",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/2"
+    }
+  ]
 }

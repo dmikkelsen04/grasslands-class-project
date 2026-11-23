@@ -7,3 +7,5 @@
 *.mp3 binary
 *.rbxlx text eol=lf
 *.rbxmx text eol=lf
+assets/environment/*.rbxm linguist-generated=true
+world/grasslands/*.rbxm linguist-generated=true
