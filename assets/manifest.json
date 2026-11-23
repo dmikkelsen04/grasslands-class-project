@@ -24,6 +24,294 @@
       "priorWork": true,
       "changesForClass": "Original textures retained on original floors at unchanged tiling",
       "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/2"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "Chicken",
+      "name": "Angry Chicken",
+      "kind": "model",
+      "path": "assets/creatures/Chicken.rbxm",
+      "changesForClass": "Preserved original geometry, dimensions, Motor6D rig, and welds. Removed executable components, normalized root pivot to origin, anchored only root, and disabled collisions/touches.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/3"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "Chicken-animations",
+      "name": "Angry Chicken idle and walk",
+      "kind": "animation",
+      "path": "assets/animations/Chicken.rbxm",
+      "sourceClips": {
+        "Idle": {
+          "duration": 3.5166666507720947,
+          "frames": 142,
+          "sourceClipId": "OriginalFarmAdaptation20261116_AngryChicken_Idle"
+        },
+        "Walk": {
+          "duration": 4.25,
+          "frames": 171,
+          "sourceClipId": "OriginalFarmAdaptation20261116_AngryChicken_Walk"
+        }
+      },
+      "changesForClass": "Decoded original packed pose data into numeric JSON clips for new class-project playback code. Source clip IDs are local library identifiers, not hosted Roblox asset IDs. No upload or animation ownership grant is required for these embedded data.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/5"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "WaddleDuck",
+      "name": "Waddle Duckling",
+      "kind": "model",
+      "path": "assets/creatures/WaddleDuck.rbxm",
+      "changesForClass": "Preserved original geometry, dimensions, Motor6D rig, and welds. Removed executable components, normalized root pivot to origin, anchored only root, and disabled collisions/touches.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/3"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "WaddleDuck-animations",
+      "name": "Waddle Duckling idle and walk",
+      "kind": "animation",
+      "path": "assets/animations/WaddleDuck.rbxm",
+      "sourceClips": {
+        "Idle": {
+          "duration": 4.800000190734863,
+          "frames": 289,
+          "sourceClipId": "00acb07c0ad17ac618dcb45b902201ded84fdeeac7adec6c72582d27339d7731"
+        },
+        "Walk": {
+          "duration": 1.2000000476837158,
+          "frames": 73,
+          "sourceClipId": "0674912f7182bd6ee3e377cfe0d4804599e6af72149c9b5c47c2a765c2c46228"
+        }
+      },
+      "changesForClass": "Decoded original packed pose data into numeric JSON clips for new class-project playback code. Source clip IDs are local library identifiers, not hosted Roblox asset IDs. No upload or animation ownership grant is required for these embedded data.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/5"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "GrumpyBison",
+      "name": "Grumpy Bison",
+      "kind": "model",
+      "path": "assets/creatures/GrumpyBison.rbxm",
+      "changesForClass": "Preserved original geometry, dimensions, Motor6D rig, and welds. Removed executable components, normalized root pivot to origin, anchored only root, and disabled collisions/touches.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/3"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "GrumpyBison-animations",
+      "name": "Grumpy Bison idle and walk",
+      "kind": "animation",
+      "path": "assets/animations/GrumpyBison.rbxm",
+      "sourceClips": {
+        "Idle": {
+          "duration": 4.800000190734863,
+          "frames": 289,
+          "sourceClipId": "67c2db684b5baa453a1358852d306fb4b59a731ba49893b4f25f8c27b6ff4d6e"
+        },
+        "Walk": {
+          "duration": 1.600000023841858,
+          "frames": 50,
+          "sourceClipId": "Finishing20261113v1_GrumpyBison_Walk"
+        }
+      },
+      "changesForClass": "Decoded original packed pose data into numeric JSON clips for new class-project playback code. Source clip IDs are local library identifiers, not hosted Roblox asset IDs. No upload or animation ownership grant is required for these embedded data.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/5"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "MoodyCow",
+      "name": "Moody Cow",
+      "kind": "model",
+      "path": "assets/creatures/MoodyCow.rbxm",
+      "changesForClass": "Preserved original geometry, dimensions, Motor6D rig, and welds. Removed executable components, normalized root pivot to origin, anchored only root, and disabled collisions/touches.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/3"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "MoodyCow-animations",
+      "name": "Moody Cow idle and walk",
+      "kind": "animation",
+      "path": "assets/animations/MoodyCow.rbxm",
+      "sourceClips": {
+        "Idle": {
+          "duration": 4.800000190734863,
+          "frames": 145,
+          "sourceClipId": "747c78099f2eda5f6af6799b32dc5bc6263008c2d2cf7660133a8208e08eb05f"
+        },
+        "Walk": {
+          "duration": 1.2000000476837158,
+          "frames": 73,
+          "sourceClipId": "418e22ff33eda1365348f08a69c42d87c5efc47272de21b438e54ff53b0d4591"
+        }
+      },
+      "changesForClass": "Decoded original packed pose data into numeric JSON clips for new class-project playback code. Source clip IDs are local library identifiers, not hosted Roblox asset IDs. No upload or animation ownership grant is required for these embedded data.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/5"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "BouncyPig",
+      "name": "Bouncy Pig",
+      "kind": "model",
+      "path": "assets/creatures/BouncyPig.rbxm",
+      "changesForClass": "Preserved original geometry, dimensions, Motor6D rig, and welds. Removed executable components, normalized root pivot to origin, anchored only root, and disabled collisions/touches.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/3"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "BouncyPig-animations",
+      "name": "Bouncy Pig idle and walk",
+      "kind": "animation",
+      "path": "assets/animations/BouncyPig.rbxm",
+      "sourceClips": {
+        "Idle": {
+          "duration": 6,
+          "frames": 241,
+          "sourceClipId": "PigStraightArms20261116_Idle"
+        },
+        "Walk": {
+          "duration": 2.5,
+          "frames": 101,
+          "sourceClipId": "PigStraightArms20261116_Walk"
+        }
+      },
+      "changesForClass": "Decoded original packed pose data into numeric JSON clips for new class-project playback code. Source clip IDs are local library identifiers, not hosted Roblox asset IDs. No upload or animation ownership grant is required for these embedded data.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/5"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "WoolballSheep",
+      "name": "Woolball",
+      "kind": "model",
+      "path": "assets/creatures/WoolballSheep.rbxm",
+      "changesForClass": "Preserved original geometry, dimensions, Motor6D rig, and welds. Removed executable components, normalized root pivot to origin, anchored only root, and disabled collisions/touches.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/3"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "WoolballSheep-animations",
+      "name": "Woolball idle and walk",
+      "kind": "animation",
+      "path": "assets/animations/WoolballSheep.rbxm",
+      "sourceClips": {
+        "Idle": {
+          "duration": 4,
+          "frames": 241,
+          "sourceClipId": "1623676c9b1aa336f34086d4ede773feb784f74243e2d103ae6d12d84103715d"
+        },
+        "Walk": {
+          "duration": 1.7999999523162842,
+          "frames": 55,
+          "sourceClipId": "Finishing20261113v1_WoolballSheep_Walk"
+        }
+      },
+      "changesForClass": "Decoded original packed pose data into numeric JSON clips for new class-project playback code. Source clip IDs are local library identifiers, not hosted Roblox asset IDs. No upload or animation ownership grant is required for these embedded data.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/5"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "Scarecrow",
+      "name": "Living Scarecrow",
+      "kind": "model",
+      "path": "assets/creatures/Scarecrow.rbxm",
+      "changesForClass": "Preserved original geometry, dimensions, Motor6D rig, and welds. Removed executable components, normalized root pivot to origin, anchored only root, and disabled collisions/touches.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/3"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "Scarecrow-animations",
+      "name": "Living Scarecrow idle and walk",
+      "kind": "animation",
+      "path": "assets/animations/Scarecrow.rbxm",
+      "sourceClips": {
+        "Idle": {
+          "duration": 4.800000190734863,
+          "frames": 289,
+          "sourceClipId": "371eed34f866f799a8b6c94c2c987796a2178077ec4c09c7aa5dbc730a143a80"
+        },
+        "Walk": {
+          "duration": 1.2000000476837158,
+          "frames": 38,
+          "sourceClipId": "Finishing20261113v1_Scarecrow_Walk"
+        }
+      },
+      "changesForClass": "Decoded original packed pose data into numeric JSON clips for new class-project playback code. Source clip IDs are local library identifiers, not hosted Roblox asset IDs. No upload or animation ownership grant is required for these embedded data.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/5"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "CornfedColossus",
+      "name": "Corn Colossus",
+      "kind": "model",
+      "path": "assets/creatures/CornfedColossus.rbxm",
+      "changesForClass": "Preserved original geometry, dimensions, Motor6D rig, and welds. Removed executable components, normalized root pivot to origin, anchored only root, and disabled collisions/touches.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/3"
+    },
+    {
+      "source": "Catch a Shiny, place 114451084618400, owner-provided snapshot 2026-11-23",
+      "creator": "Existing user-provided game assets; per-asset authorship not independently verified",
+      "permission": "Owner requested reuse of these eight existing grasslands creatures and animations; existing permissions apply, no new license grant",
+      "priorWork": true,
+      "id": "CornfedColossus-animations",
+      "name": "Corn Colossus idle and walk",
+      "kind": "animation",
+      "path": "assets/animations/CornfedColossus.rbxm",
+      "sourceClips": {
+        "Idle": {
+          "duration": 4.599999904632568,
+          "frames": 277,
+          "sourceClipId": "e12a9b1bf8948a743b1ea6b8e6db70cc571e898fd37a418e04e8d0fb1bfad24a"
+        },
+        "Walk": {
+          "duration": 1.5,
+          "frames": 91,
+          "sourceClipId": "4bb716c70fa241a3ca5462c87fb5d3479b644fd7843a1cd7c15de180bf5ad6b6"
+        }
+      },
+      "changesForClass": "Decoded original packed pose data into numeric JSON clips for new class-project playback code. Source clip IDs are local library identifiers, not hosted Roblox asset IDs. No upload or animation ownership grant is required for these embedded data.",
+      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/5"
     }
   ]
 }
