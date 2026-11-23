@@ -32,7 +32,7 @@ jobs:
           unzip -q .tools/stylua.zip -d .tools/stylua
           chmod +x .tools/rojo/rojo .tools/stylua/stylua
       - name: Check Luau formatting and syntax
-        run: .tools/stylua/stylua --check src tools/generate-map.luau
+        run: .tools/stylua/stylua --check src tools/generate-map.luau tools/import-original-map.luau
       - name: Build Roblox place
         run: .tools/rojo/rojo build default.project.json --output build/grasslands.rbxlx
       - name: Validate map structure

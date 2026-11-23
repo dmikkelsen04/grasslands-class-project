@@ -1,6 +1,6 @@
 # Test plan
 
-No gameplay tests exist yet because gameplay has not been implemented. CI parses/formats Luau, builds the place, and runs `python3 tests/map_structure.py build/grasslands.rbxlx`. The map checks catch unsafe spawn placement, floor gaps, missing/non-colliding perimeter walls, unanchored geometry, and embedded old gameplay scripts/interactions. This is not gameplay unit/integration coverage. Studio walkthrough results are recorded in `docs/map-review.md`.
+No gameplay tests exist yet because gameplay has not been implemented. CI parses/formats Luau, builds the place, and runs `python3 tests/map_structure.py build/grasslands.rbxlx`. The map checks catch unsafe spawn placement, entrance floor gaps, a missing/non-colliding end wall, leftover bikes, unanchored geometry, and embedded old gameplay scripts/interactions. This is not gameplay unit/integration coverage. Studio walkthrough results are recorded in `docs/map-review.md`.
 
 Each gameplay PR should add tests for its pure rules and record Studio validation for Roblox-dependent behavior. Planned automated coverage includes catch validation/cooldowns, concurrent catch award handling, unique collection entries, and saved-data failure handling.
 

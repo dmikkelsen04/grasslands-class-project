@@ -2,63 +2,15 @@
   "schemaVersion": 1,
   "assets": [
     {
-      "id": "SpawnScenery",
-      "name": "SpawnScenery",
+      "id": "OriginalSpawnAndGrasslands",
+      "name": "Original spawn and grasslands scenery",
       "kind": "model",
-      "path": "assets/environment/SpawnScenery.rbxmx",
+      "path": "assets/environment/OriginalSpawnAndGrasslands.rbxm",
       "source": "Catch a Shiny, place 114451084618400, open Studio snapshot 2026-11-23",
       "creator": "Existing user-provided game scenery; original per-asset authorship not independently verified",
       "permission": "Reused from the user-provided game at the owner's request; existing asset permissions apply, no new license grant",
       "priorWork": true,
-      "changesForClass": "Gameplay scripts and interactive prompts removed; anchored visual template, placed in a new class-project layout",
-      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/2"
-    },
-    {
-      "id": "CloverBarn",
-      "name": "CloverBarn",
-      "kind": "model",
-      "path": "assets/environment/CloverBarn.rbxmx",
-      "source": "Catch a Shiny, place 114451084618400, open Studio snapshot 2026-11-23",
-      "creator": "Existing user-provided game scenery; original per-asset authorship not independently verified",
-      "permission": "Reused from the user-provided game at the owner's request; existing asset permissions apply, no new license grant",
-      "priorWork": true,
-      "changesForClass": "Gameplay scripts and interactive prompts removed; anchored visual template, placed in a new class-project layout",
-      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/2"
-    },
-    {
-      "id": "LittleCornfield",
-      "name": "LittleCornfield",
-      "kind": "model",
-      "path": "assets/environment/LittleCornfield.rbxmx",
-      "source": "Catch a Shiny, place 114451084618400, open Studio snapshot 2026-11-23",
-      "creator": "Existing user-provided game scenery; original per-asset authorship not independently verified",
-      "permission": "Reused from the user-provided game at the owner's request; existing asset permissions apply, no new license grant",
-      "priorWork": true,
-      "changesForClass": "Gameplay scripts and interactive prompts removed; anchored visual template, placed in a new class-project layout",
-      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/2"
-    },
-    {
-      "id": "WoodlandOak",
-      "name": "WoodlandOak",
-      "kind": "model",
-      "path": "assets/environment/WoodlandOak.rbxmx",
-      "source": "Catch a Shiny, place 114451084618400, open Studio snapshot 2026-11-23",
-      "creator": "Existing user-provided game scenery; original per-asset authorship not independently verified",
-      "permission": "Reused from the user-provided game at the owner's request; existing asset permissions apply, no new license grant",
-      "priorWork": true,
-      "changesForClass": "Gameplay scripts and interactive prompts removed; anchored visual template, placed in a new class-project layout",
-      "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/2"
-    },
-    {
-      "id": "FarmCrates",
-      "name": "FarmCrates",
-      "kind": "model",
-      "path": "assets/environment/FarmCrates.rbxmx",
-      "source": "Catch a Shiny, place 114451084618400, open Studio snapshot 2026-11-23",
-      "creator": "Existing user-provided game scenery; original per-asset authorship not independently verified",
-      "permission": "Reused from the user-provided game at the owner's request; existing asset permissions apply, no new license grant",
-      "priorWork": true,
-      "changesForClass": "Gameplay scripts and interactive prompts removed; anchored visual template, placed in a new class-project layout",
+      "changesForClass": "Original scale and placement preserved; distant biome scenery, scripts, prompts, remotes, and five SpeedBicycle models excluded. A matching end wall is added in the generated map.",
       "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/2"
     },
     {
@@ -70,7 +22,7 @@
       "creator": "Original asset creator not independently verified",
       "permission": "Existing hosted Roblox asset reused as in the supplied place; no new license grant",
       "priorWork": true,
-      "changesForClass": "Applied to new continuous grasslands and spawn foundations at 10-stud tiling",
+      "changesForClass": "Original textures retained on original floors at unchanged tiling",
       "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/2"
     }
   ]

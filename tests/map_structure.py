@@ -41,32 +41,30 @@ assert len(spawns) == 1, "Exactly one player spawn is required"
 assert prop(spawns[0], "Enabled").text == "true", "Spawn is disabled"
 assert prop(spawns[0], "Neutral").text == "true", "Spawn must accept every player"
 
-grass = box(named("GrasslandsFoundation"))
-spawn_ground = box(named("SpawnFoundation"))
-assert grass[1][0] - grass[0][0] >= 480 and grass[1][2] - grass[0][2] >= 500
-assert abs(grass[1][1] - spawn_ground[1][1]) < 0.01, "Ground elevations differ at the entrance"
-assert abs(grass[1][2] - spawn_ground[0][2]) < 0.01, "Gap between spawn and meadow"
+# Original floors retain their exact dimensions and positions.
+spawn_ground = box(named("MapSpawn1"))
+assert abs(spawn_ground[1][0] - spawn_ground[0][0] - 343.25) < .01
+assert abs(spawn_ground[1][2] - spawn_ground[0][2] - 181) < .01
+floors = [box(named(f"GrasslandGround_{i}")) for i in range(1, 5)]
+stripe = box(named("SafeZoneStripe"))
+assert all(abs(b[1][1] - 1) < .01 for b in floors + [stripe, spawn_ground])
+assert abs(max(b[1][2] for b in floors) - stripe[0][2]) < .01
+assert abs(stripe[1][2] - spawn_ground[0][2]) < .01
+assert abs(min(b[0][2] for b in floors) + 337) < .01
 spawn = box(spawns[0])
 for axis in (0, 2):
-    assert spawn_ground[0][axis] <= spawn[0][axis] <= spawn[1][axis] <= spawn_ground[1][axis], "Spawn is outside the supporting floor"
+    assert spawn_ground[0][axis] <= spawn[0][axis] <= spawn[1][axis] <= spawn_ground[1][axis]
 
-limits = (grass[0][0], grass[1][0], grass[0][2], spawn_ground[1][2])
-wall_group = named("BoundaryColliders")
-walls = {name(i): i for i in wall_group.findall("Item")}
-assert set(walls) == {"West", "East", "North", "South"}
-for side, item in walls.items():
-    collision = prop(item, "CanCollide")
-    # Roblox XML may omit default-valued properties; BasePart.CanCollide defaults to true.
-    assert collision is None or collision.text == "true", f"{side} wall is not solid"
-    low, high = box(item)
-    assert low[1] < 1 and high[1] > 100, f"{side} wall does not prevent walking/jumping out"
-    if side in ("West", "East"):
-        edge = limits[0] if side == "West" else limits[1]
-        assert low[0] <= edge <= high[0] and low[2] <= limits[2] and high[2] >= limits[3]
-    else:
-        edge = limits[2] if side == "North" else limits[3]
-        assert low[2] <= edge <= high[2] and low[0] <= limits[0] and high[0] >= limits[1]
-
-assert len(named("CreatureAreas").findall("Item")) >= 3, "Missing future creature clearings"
+# The removed biome exit must be closed with a solid original-style wall.
+wall = named("ClassProjectEndWall")
+lower = next(i for i in wall.findall("Item") if name(i) == "Lower")
+low, high = box(lower)
+assert abs(high[2] + 337) < .01 and low[0] <= -117.75 and high[0] >= 88
+assert high[1] > 25 and low[1] < 1
+collision = prop(lower, "CanCollide")
+assert collision is None or collision.text == "true"
+assert len(named("EncounterGrassPatches").findall("Item")) == 5
+assert len(named("Plots").findall("Item")) == 5
+assert not any("bicycle" in name(i).lower() or "bike" in name(i).lower() for i in workspace.iter("Item")), "Bike left in map"
 assert not any(name(i) in ("BootstrapFloor", "BootstrapSpawn") for i in items)
-print(f"PASS: {len(parts)} anchored map parts, one safe spawn, continuous ground, closed perimeter, and no embedded gameplay.")
+print(f"PASS: {len(parts)} anchored parts, original-size floors, safe spawn, sealed biome exit, five grass patches, no bikes or legacy gameplay.")

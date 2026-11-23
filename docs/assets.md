@@ -1,8 +1,10 @@
 # Reused asset register
 
-Issue #2 reuses visual assets extracted from the owner's open Catch a Shiny place (place ID 114451084618400) on 2026-11-23. The local snapshot was preserved outside this repository. Source templates are stored in `assets/environment`; the new layout is exported in `world/grasslands/GrasslandsMap.rbxmx`. No previous gameplay scripts are included.
+Issue #2 copies the original spawn and grasslands from the owner's Catch a Shiny place (114451084618400), snapshotted on 2026-11-23. **The geometry and layout are reused prior work.** The original cloud place was not modified. The snapshot is kept outside this repository.
 
-The imported assets are the spawn floor/point and five static plot shells, CloverBarn, LittleCornfield, WoodlandOak, and FarmCrates. The ground texture `rbxassetid://4806196507` matches the original place. See `assets/manifest.json` for individual records. Original third-party authorship/license details have not been independently verified; this repository does not grant a new license to these assets.
+`assets/environment/OriginalSpawnAndGrasslands.rbxm` contains the original floors, spawn point, five plot shells, ball showcase, grasslands decorations, pond, barn/cornfield, trees, crates, grass patches, den scenery, safe-zone stripe, and perimeter cliffs at unchanged positions and sizes. Five bikes and old gameplay scripts/interactions are removed. Distant biome decorations stored under the original Level 1 folder are excluded. Hosted textures/meshes retain their original references. `world/grasslands/GrasslandsMap.rbxm` adds only a matching wall at the removed biome exit.
+
+See `assets/manifest.json`. Original third-party authorship/license details have not been independently verified; this repository does not grant a new license to these assets.
 
 For each import, add an entry to `assets/manifest.json` with:
 
