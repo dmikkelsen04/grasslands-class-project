@@ -6,7 +6,7 @@ All items below are **planned**, not completed. Story points, assignees, and spr
 
 As a teammate, I want an agreed scope and sprint plan so that we can deliver a demonstrable game on time.
 
-- Confirm the deadline, sprint dates, three-creature roster, and MVP scope.
+- Confirm the deadline, sprint dates, eight-creature roster, and MVP scope.
 - Give each selected story an owner, estimate, and reviewer.
 - Create/update the project board and record sprint planning decisions.
 - Agree how to collect daily progress, review, and retrospective evidence.
@@ -22,9 +22,9 @@ As a player, I want a small navigable grasslands area so that I can explore and 
 
 ## 3. Import approved grasslands creature art
 
-As a player, I want three recognizable creature species so that I can tell catches apart.
+As a player, I want eight recognizable grasslands creature species so that I can tell catches apart.
 
-- Agree and import three species using only approved visual assets.
+- Inventory and import the eight existing grasslands species using only approved visual assets.
 - Record their provenance, prior-work status, and permissions.
 - Remove embedded old gameplay scripts and document model pivot/rig requirements.
 - Verify the models render correctly in a clean build.
