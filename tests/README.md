@@ -1,6 +1,8 @@
 # Test plan
 
-No gameplay tests exist yet because gameplay has not been implemented. CI parses/formats Luau, builds the place, and runs `python3 tests/map_structure.py build/grasslands.rbxlx`. The map checks catch unsafe spawn placement, entrance floor gaps, a missing/non-colliding end wall, leftover bikes, unanchored geometry, and embedded old gameplay scripts/interactions. This is not gameplay unit/integration coverage. Studio walkthrough results are recorded in `docs/map-review.md`.
+CI parses/formats Luau, builds the place, and runs `tests/map_structure.py` and `tests/creature_assets.py`. The map checks cover spawn placement, original floor connections, the closed biome exit, anchoring, and absence of legacy interactions. Creature checks cover all eight rigs, internal joint connectivity, one anchored root, and valid matching idle/walk pose data.
+
+`creatures.studio.server.luau` and `creatures.studio.client.luau` form a separate two-client Studio integration harness. They check the shared population cap, each species moving and changing states, invalid ground/obstacle rejection, client animation, despawn/respawn, duplicate removal rejection, and stop/restart. These runtime checks are not executed by GitHub Actions. See [creature review and test instructions](../docs/creature-review.md). Catching, collection, and persistence tests remain future work.
 
 Each gameplay PR should add tests for its pure rules and record Studio validation for Roblox-dependent behavior. Planned automated coverage includes catch validation/cooldowns, concurrent catch award handling, unique collection entries, and saved-data failure handling.
 

@@ -9,7 +9,7 @@ Join a small grasslands zone, locate a creature, attempt a catch, see the result
 ## MVP acceptance criteria
 
 - A new player spawns safely and can reach all intended grasslands areas.
-- Three agreed creature species can spawn within valid zone boundaries.
+- The eight existing grasslands creature species can spawn within valid zone boundaries.
 - Creatures have basic idle/movement visuals and do not spawn inside obstacles.
 - One catching tool/input has clear success and failure feedback.
 - The server validates target, distance, cooldown, and ownership/reward eligibility.
@@ -23,7 +23,7 @@ Join a small grasslands zone, locate a creature, attempt a catch, see the result
 
 Server code owns creature lifecycle, catch validation/results, and saved player collections. Client code handles input, presentation, and UI. Shared modules hold types, configuration, and pure calculations that can be tested without a running place. Visual models live in asset folders, not inside gameplay source.
 
-Start with three species; rarity tiers and shiny variants are stretch goals after the base loop works. Additional zones, player stealing, trading, monetization, and a full economy are out of scope.
+Use the eight existing grasslands species; rarity tiers and shiny variants are stretch goals after the base loop works. Additional zones, player stealing, trading, monetization, and a full economy are out of scope.
 
 ## First planning meeting
 

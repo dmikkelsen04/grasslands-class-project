@@ -4,13 +4,13 @@ A new Roblox software engineering class project: one small, playable grasslands 
 
 ## Current state
 
-Issue #2 map implementation copies the original spawn and grasslands at their original scale and positions: five static plots, the safe-zone stripe, pond, barn, cornfield, trees, five encounter grass patches, and original cliff walls. All five bikes and the Munch Ball display (balls, pedestals, and labels) are removed. A matching wall closes the exit to omitted biomes. Creatures, catching, animations, the collection index, and persistence are **not implemented**.
+Issue #2 map implementation copies the original spawn and grasslands at their original scale and positions: five static plots, the safe-zone stripe, pond, barn, cornfield, trees, five encounter grass patches, and original cliff walls. All five bikes and the Munch Ball display (balls, pedestals, and labels) are removed. A matching wall closes the exit to omitted biomes. Eight original grasslands creatures now spawn, roam, and play their idle/walk animations. Catching, the collection index, and persistence are **not implemented**. See [creature implementation and tests](docs/creature-review.md).
 
 Development starts with this repository. The map geometry and layout are explicitly reused prior work from the owner's Catch a Shiny place, recorded in [the asset register](docs/assets.md). New class work covers extraction, removing legacy interactions/bikes, packaging, closing the biome exit, validation, and future gameplay. Reusing a map does not count as creating it during this project.
 
 ## Scope
 
-The proposed MVP is one grasslands map, a small roster (initial target: three creature species), basic creature movement/animations, one catching interaction, an index, and saved collection progress. The team will confirm the roster and sprint dates before implementation. Other zones, trading, monetization, elaborate economies, and stealing mechanics are outside the initial scope. See [scope and acceptance criteria](docs/scope.md).
+The proposed MVP is one grasslands map, the eight existing grasslands creature species, basic creature movement/animations, one catching interaction, an index, and saved collection progress. Sprint planning is tracked in issue #1. Other zones, trading, monetization, elaborate economies, and stealing mechanics are outside the initial scope. See [scope and acceptance criteria](docs/scope.md).
 
 ## Get started on Windows
 
@@ -49,7 +49,7 @@ GitHub protection applies to GitHub, not Studio publishing. A merge does not aut
 
 ## Validation and limitations
 
-CI runs **Build and format** on pushes to `main` and on PRs. It checks formatting/Luau parsing with StyLua, builds the place with Rojo, and runs Python map-structure assertions (anchoring, safe spawn, continuous ground, the sealed biome exit, bike removal, and no embedded legacy gameplay). It does not run Roblox gameplay, type checking, or gameplay unit/integration tests yet. No gameplay coverage percentage is claimed.
+CI runs **Build and format** on pushes to `main` and on PRs. It checks formatting/Luau parsing with StyLua, builds the place with Rojo, and runs Python map-structure assertions (anchoring, safe spawn, continuous ground, the sealed biome exit, bike removal, and no embedded legacy gameplay), plus rig connectivity and animation-data validation. It does not run Roblox gameplay, type checking, or gameplay unit/integration tests yet. No gameplay coverage percentage is claimed.
 
 CI retains the built place as a review artifact. Reviewers must also check the PR's Studio test evidence, especially for visual and multiplayer changes. No Roblox credentials or deployment keys are required for this workflow.
 

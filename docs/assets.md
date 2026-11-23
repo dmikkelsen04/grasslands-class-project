@@ -21,3 +21,7 @@ For each import, add an entry to `assets/manifest.json` with:
 - `issue`: issue/PR tracking the import.
 
 For visual models, inspect all descendants and remove existing gameplay scripts. Rebuild gameplay in new reviewed code. For animations, distinguish reusable animation data from the newly written playback/integration code. Do not invent ownership or dates where they are unknown.
+
+## Creature imports for issues 3 and 5
+
+The eight existing grasslands rigs and their embedded Idle/Walk pose data are recorded individually in `assets/manifest.json`. `assets/creature-import.json` records dimensions, ground offsets, source clip identifiers, durations, and frame counts. No old gameplay or animation-player scripts are included. See [creature review](creature-review.md) for rig requirements, playback, validation, and reproduction.

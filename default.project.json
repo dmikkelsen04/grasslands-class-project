@@ -3,6 +3,7 @@
   "tree": {
     "$className": "DataModel",
     "ReplicatedStorage": {
+      "CreatureAnimationData": { "$path": "assets/animations" },
       "Shared": {
         "$path": "src/shared"
       }
