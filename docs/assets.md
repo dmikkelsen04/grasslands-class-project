@@ -1,6 +1,10 @@
 # Reused asset register
 
-No existing-game assets have been imported yet. The only initial scene objects are new primitive scaffolding in `default.project.json`.
+Issue #2 copies the original spawn and grasslands from the owner's Catch a Shiny place (114451084618400), snapshotted on 2026-11-23. **The geometry and layout are reused prior work.** The original cloud place was not modified. The snapshot is kept outside this repository.
+
+`assets/environment/OriginalSpawnAndGrasslands.rbxm` contains the original floors, spawn point, five plot shells, grasslands decorations, pond, barn/cornfield, trees, crates, grass patches, den scenery, safe-zone stripe, and perimeter cliffs at unchanged positions and sizes. The Munch Ball display, five bikes, and old gameplay scripts/interactions are removed. Distant biome decorations stored under the original Level 1 folder are excluded. Hosted textures/meshes retain their original references. `world/grasslands/GrasslandsMap.rbxm` adds only a matching wall at the removed biome exit.
+
+See `assets/manifest.json`. Original third-party authorship/license details have not been independently verified; this repository does not grant a new license to these assets.
 
 For each import, add an entry to `assets/manifest.json` with:
 
@@ -17,3 +21,7 @@ For each import, add an entry to `assets/manifest.json` with:
 - `issue`: issue/PR tracking the import.
 
 For visual models, inspect all descendants and remove existing gameplay scripts. Rebuild gameplay in new reviewed code. For animations, distinguish reusable animation data from the newly written playback/integration code. Do not invent ownership or dates where they are unknown.
+
+## Creature imports for issues 3 and 5
+
+The eight existing grasslands rigs and their embedded Idle/Walk pose data are recorded individually in `assets/manifest.json`. `assets/creature-import.json` records dimensions, ground offsets, source clip identifiers, durations, and frame counts. No old gameplay or animation-player scripts are included. See [creature review](creature-review.md) for rig requirements, playback, validation, and reproduction.

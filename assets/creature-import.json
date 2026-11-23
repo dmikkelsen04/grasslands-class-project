@@ -1,0 +1,170 @@
+[
+  {
+    "clips": {
+      "Idle": {
+        "duration": 3.5166666507720947,
+        "frames": 142,
+        "sourceClipId": "OriginalFarmAdaptation20261116_AngryChicken_Idle"
+      },
+      "Walk": {
+        "duration": 4.25,
+        "frames": 171,
+        "sourceClipId": "OriginalFarmAdaptation20261116_AngryChicken_Walk"
+      }
+    },
+    "depth": 6.2308573722839355,
+    "displayName": "Angry Chicken",
+    "groundOffset": 3.5900001525878906,
+    "height": 6.520000219345093,
+    "id": "Chicken",
+    "rarity": "Common",
+    "width": 4.919941425323486
+  },
+  {
+    "clips": {
+      "Idle": {
+        "duration": 4.800000190734863,
+        "frames": 289,
+        "sourceClipId": "00acb07c0ad17ac618dcb45b902201ded84fdeeac7adec6c72582d27339d7731"
+      },
+      "Walk": {
+        "duration": 1.2000000476837158,
+        "frames": 73,
+        "sourceClipId": "0674912f7182bd6ee3e377cfe0d4804599e6af72149c9b5c47c2a765c2c46228"
+      }
+    },
+    "depth": 3.571253538131714,
+    "displayName": "Waddle Duckling",
+    "groundOffset": 1.9800000190734863,
+    "height": 3.6700000762939453,
+    "id": "WaddleDuck",
+    "rarity": "Common",
+    "width": 3.36187744140625
+  },
+  {
+    "clips": {
+      "Idle": {
+        "duration": 4.800000190734863,
+        "frames": 289,
+        "sourceClipId": "67c2db684b5baa453a1358852d306fb4b59a731ba49893b4f25f8c27b6ff4d6e"
+      },
+      "Walk": {
+        "duration": 1.600000023841858,
+        "frames": 50,
+        "sourceClipId": "Finishing20261113v1_GrumpyBison_Walk"
+      }
+    },
+    "depth": 13.377399444580078,
+    "displayName": "Grumpy Bison",
+    "groundOffset": 3.860870122909546,
+    "height": 7.680001258850098,
+    "id": "GrumpyBison",
+    "rarity": "Rare",
+    "width": 8.222626686096191
+  },
+  {
+    "clips": {
+      "Idle": {
+        "duration": 4.800000190734863,
+        "frames": 145,
+        "sourceClipId": "747c78099f2eda5f6af6799b32dc5bc6263008c2d2cf7660133a8208e08eb05f"
+      },
+      "Walk": {
+        "duration": 1.2000000476837158,
+        "frames": 73,
+        "sourceClipId": "418e22ff33eda1365348f08a69c42d87c5efc47272de21b438e54ff53b0d4591"
+      }
+    },
+    "depth": 11.234724521636963,
+    "displayName": "Moody Cow",
+    "groundOffset": 3.299085855484009,
+    "height": 6.830000162124634,
+    "id": "MoodyCow",
+    "rarity": "Rare",
+    "width": 7.834321975708008
+  },
+  {
+    "clips": {
+      "Idle": {
+        "duration": 6,
+        "frames": 241,
+        "sourceClipId": "PigStraightArms20261116_Idle"
+      },
+      "Walk": {
+        "duration": 2.5,
+        "frames": 101,
+        "sourceClipId": "PigStraightArms20261116_Walk"
+      }
+    },
+    "depth": 7.130019426345825,
+    "displayName": "Bouncy Pig",
+    "groundOffset": 2.0500001907348633,
+    "height": 7.69387674331665,
+    "id": "BouncyPig",
+    "rarity": "Epic",
+    "width": 7.300048828125
+  },
+  {
+    "clips": {
+      "Idle": {
+        "duration": 4,
+        "frames": 241,
+        "sourceClipId": "1623676c9b1aa336f34086d4ede773feb784f74243e2d103ae6d12d84103715d"
+      },
+      "Walk": {
+        "duration": 1.7999999523162842,
+        "frames": 55,
+        "sourceClipId": "Finishing20261113v1_WoolballSheep_Walk"
+      }
+    },
+    "depth": 6.5232415199279785,
+    "displayName": "Woolball",
+    "groundOffset": 2.9471914768218994,
+    "height": 5.894382476806641,
+    "id": "WoolballSheep",
+    "rarity": "Epic",
+    "width": 5.894457817077637
+  },
+  {
+    "clips": {
+      "Idle": {
+        "duration": 4.800000190734863,
+        "frames": 289,
+        "sourceClipId": "371eed34f866f799a8b6c94c2c987796a2178077ec4c09c7aa5dbc730a143a80"
+      },
+      "Walk": {
+        "duration": 1.2000000476837158,
+        "frames": 38,
+        "sourceClipId": "Finishing20261113v1_Scarecrow_Walk"
+      }
+    },
+    "depth": 3.2698354721069336,
+    "displayName": "Living Scarecrow",
+    "groundOffset": 2.9986047744750977,
+    "height": 8.919065952301025,
+    "id": "Scarecrow",
+    "rarity": "Legendary",
+    "width": 6.976296424865723
+  },
+  {
+    "clips": {
+      "Idle": {
+        "duration": 4.599999904632568,
+        "frames": 277,
+        "sourceClipId": "e12a9b1bf8948a743b1ea6b8e6db70cc571e898fd37a418e04e8d0fb1bfad24a"
+      },
+      "Walk": {
+        "duration": 1.5,
+        "frames": 91,
+        "sourceClipId": "4bb716c70fa241a3ca5462c87fb5d3479b644fd7843a1cd7c15de180bf5ad6b6"
+      }
+    },
+    "depth": 7.073482275009155,
+    "displayName": "Corn Colossus",
+    "groundOffset": 4.610540390014648,
+    "height": 14.47927188873291,
+    "id": "CornfedColossus",
+    "rarity": "Mythic",
+    "width": 12.038677215576172
+  }
+]

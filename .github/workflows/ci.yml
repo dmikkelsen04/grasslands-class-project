@@ -32,9 +32,13 @@ jobs:
           unzip -q .tools/stylua.zip -d .tools/stylua
           chmod +x .tools/rojo/rojo .tools/stylua/stylua
       - name: Check Luau formatting and syntax
-        run: .tools/stylua/stylua --check src
+        run: .tools/stylua/stylua --check src tools tests
       - name: Build Roblox place
         run: .tools/rojo/rojo build default.project.json --output build/grasslands.rbxlx
+      - name: Validate map structure
+        run: python3 tests/map_structure.py build/grasslands.rbxlx
+      - name: Validate creature rigs and animation data
+        run: python3 tests/creature_assets.py build/grasslands.rbxlx
       - name: Upload review build
         uses: actions/upload-artifact@v4
         with:
