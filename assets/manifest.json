@@ -10,7 +10,7 @@
       "creator": "Existing user-provided game scenery; original per-asset authorship not independently verified",
       "permission": "Reused from the user-provided game at the owner's request; existing asset permissions apply, no new license grant",
       "priorWork": true,
-      "changesForClass": "Original scale and placement preserved; distant biome scenery, scripts, prompts, remotes, and five SpeedBicycle models excluded. A matching end wall is added in the generated map.",
+      "changesForClass": "Original scale and placement preserved; distant biome scenery, scripts, prompts, remotes, five SpeedBicycle models, and the Munch Ball display excluded. A matching end wall is added in the generated map.",
       "issue": "https://github.com/dmikkelsen04/grasslands-class-project/issues/2"
     },
     {

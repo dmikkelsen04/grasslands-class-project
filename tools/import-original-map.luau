@@ -12,7 +12,7 @@ local function copy(instance, parent)
 	clone.Parent = parent or root
 	return clone
 end
-for _, name in { "MapSpawn1", "SpawnLocation", "Plots", "MunchBallShowcase" } do
+for _, name in { "MapSpawn1", "SpawnLocation", "Plots" } do
 	copy(map[name])
 end
 copy(map.Levels["Level 1 - Grasslands"].PondGroundSurround)

@@ -4,7 +4,7 @@ A new Roblox software engineering class project: one small, playable grasslands 
 
 ## Current state
 
-Issue #2 map implementation copies the original spawn and grasslands at their original scale and positions: five static plots, the safe-zone stripe, pond, barn, cornfield, trees, five encounter grass patches, and original cliff walls. All five bikes are removed. A matching wall closes the exit to omitted biomes. Creatures, catching, animations, the collection index, and persistence are **not implemented**.
+Issue #2 map implementation copies the original spawn and grasslands at their original scale and positions: five static plots, the safe-zone stripe, pond, barn, cornfield, trees, five encounter grass patches, and original cliff walls. All five bikes and the Munch Ball display (balls, pedestals, and labels) are removed. A matching wall closes the exit to omitted biomes. Creatures, catching, animations, the collection index, and persistence are **not implemented**.
 
 Development starts with this repository. The map geometry and layout are explicitly reused prior work from the owner's Catch a Shiny place, recorded in [the asset register](docs/assets.md). New class work covers extraction, removing legacy interactions/bikes, packaging, closing the biome exit, validation, and future gameplay. Reusing a map does not count as creating it during this project.
 
